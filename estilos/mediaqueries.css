@@ -1,0 +1,42 @@
+
+@media (min-width: 1024px) {
+    
+    .topo-header {
+        justify-content: flex-start; 
+        margin-left: 50px; 
+        gap: 0px;
+    }
+
+    #header_card_esquerdo_superior {
+        width: 100px; 
+        margin-top: 13px;
+    }
+
+    header h1 {
+        font-size: 12rem; 
+        letter-spacing: 25px;
+    }
+
+    .subtitulos-alinhados {
+        margin-top: -5px; 
+    }
+
+    .subtitulo-header {
+        font-size: 2rem; 
+    }
+    
+    .container-titulo {
+        margin-left: 4px; 
+    }
+    
+    nav {
+            margin-top: 50px;
+    } 
+    nav ul li {
+        font-size: 1.5rem; 
+    }
+
+    nav ul li:first-child::after {
+        margin: 0 40px; 
+    }
+}
