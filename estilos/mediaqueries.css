@@ -1,20 +1,21 @@
 
 @media (min-width: 1024px) {
     
-    .topo-header {
-        justify-content: flex-start; 
-        margin-left: 50px; 
+   .topo-header {
+        justify-content: center; 
+        margin-left: 0; 
         gap: 0px;
     }
 
     #header_card_esquerdo_superior {
-        width: 100px; 
-        margin-top: 13px;
+        width: 80px; 
+        margin-top: 0;
     }
 
     header h1 {
-        font-size: 12rem; 
+        font-size: 9rem; 
         letter-spacing: 25px;
+        padding: 0 30px 30px 30px;
     }
 
     .subtitulos-alinhados {

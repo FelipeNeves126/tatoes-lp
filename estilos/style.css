@@ -19,9 +19,11 @@ body {
 }
 
 header {
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
+    width: 90%; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 10px 0; 
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -32,7 +34,7 @@ header h1 {
     letter-spacing: 5px; 
     font-weight: bolder;
     margin: 0;
-    line-height: 0.8;
+    line-height: 0.72;
 }
 
 #ibandeira {
@@ -45,7 +47,7 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    width: 50px; 
+    width: 30px; 
     margin-top: 5px; 
     flex-shrink: 0;
 }
