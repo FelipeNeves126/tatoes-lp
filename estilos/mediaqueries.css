@@ -40,4 +40,10 @@
     nav ul li:first-child::after {
         margin: 0 40px; 
     }
+
+    #logo-header{
+        width: 120px;
+        margin-top: -15px;
+        margin-left: -35px;
+    }
 }
