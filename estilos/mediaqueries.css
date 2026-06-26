@@ -46,4 +46,12 @@
         margin-top: -15px;
         margin-left: -35px;
     }
+
+    #unidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+
 }
