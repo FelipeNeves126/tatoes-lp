@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 @font-face {
     font-family: 'Steelfish';
     src: url(fontes/steelfish.bold.otf) format('opentype');
@@ -11,6 +11,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+code, pre {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700; 
 }
 
 body {
@@ -121,4 +126,121 @@ nav ul li:first-child::after {
     margin-left: -10px;
 }
 
+#carrossel-itens-cardapio {
+    margin: 20px auto;
+    width: 90vw; 
+    overflow: hidden; 
+}
 
+.carrossel-container {
+    display: flex;
+    width: 100%;
+}
+
+.carrossel-item {
+    flex: 0 0 100%; 
+    width: 100%;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover;
+}
+
+
+.carrossel-animado {
+    animation: passarFotos 25s cubic-bezier(0.45, 0, 0.15, 1) infinite;
+}
+
+@keyframes passarFotos {
+    0%, 14% { transform: translateX(0); }                 
+    17%, 31% { transform: translateX(-100%); }           
+    34%, 48% { transform: translateX(-200%); }          
+    51%, 65% { transform: translateX(-300%); }           
+    68%, 82% { transform: translateX(-400%); }           
+    85%, 99.99% { transform: translateX(-500%); }        
+    100% { transform: translateX(0); }                   
+}
+
+#unidades {
+    text-align: center;
+}
+
+#unidades img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.button-cardapio {
+    padding: 10px;
+    width: 100%; 
+    background-color: #ad5454;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Fira code', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.281);
+}
+.card-loja{
+    padding: 15px;
+}
+
+.card-loja p {
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
+footer img {
+    width: 200px;
+}
+
+
+.header-card {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.header-card h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    width: auto;
+}
+
+.icones-loja {
+    position: absolute;
+    right: 0; 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.icones-loja img, 
+.icones-loja .btn-ifood svg {
+    width: 32px !important;
+    height: 32px !important;
+    box-shadow: none !important;
+    border: none !important;
+    transition: transform 0.2s ease;
+    display: block;
+}
+
+.icones-loja a:hover {
+    transform: scale(1.1);
+}

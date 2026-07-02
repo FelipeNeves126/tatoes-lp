@@ -52,6 +52,19 @@
     grid-template-columns: 1fr 1fr;
     padding: 10px;
     text-align: center;
+    width: 90vw;
+
+    max-width: 1400px; 
+    margin: 40px auto; 
+    }
+    
+    #carrossel-itens-cardapio {
+        width: 90%; 
+        max-width: 1400px; 
+    }
+
+    .carrossel-item img {
+        height: 350px; 
+    }
 }
 
-}
