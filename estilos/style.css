@@ -190,6 +190,11 @@ nav ul li:first-child::after {
     padding: 15px;
 }
 
+.card-loja > a {
+    width: 100%;
+    display: block;
+}
+
 .card-loja p {
     padding: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -205,31 +210,30 @@ footer img {
 }
 
 
+
 .header-card {
-    position: relative;
     display: flex;
-    justify-content: center; 
+    flex-direction: column; 
     align-items: center;
+    justify-content: center; 
     width: 100%;
     margin-bottom: 15px;
     padding: 10px 0;
+    gap: 10px; 
 }
 
 .header-card h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; 
     text-align: center;
     margin: 0;
-    width: auto;
+    width: 100%;
 }
 
 .icones-loja {
-    position: absolute;
-    right: 0; 
     display: flex;
     gap: 10px;
     align-items: center;
 }
-
 
 .icones-loja img, 
 .icones-loja .btn-ifood svg {
@@ -241,6 +245,66 @@ footer img {
     display: block;
 }
 
+
+.icones-loja .img-ifood {
+    width: 55px !important; /* Um pouco mais largo para o nome aparecer bem */
+    height: auto !important; /* Mantém a proporção correta da altura */
+    box-shadow: none !important;
+    border: none !important;
+    transition: transform 0.2s ease;
+    display: block;
+}
+
 .icones-loja a:hover {
     transform: scale(1.1);
+}
+
+#sobre-nos {
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho da div */
+    width: 100vw;
+    margin: 0 auto;
+    padding: 30px 20px; /* Padding menor e mais seguro para o ambiente mobile */
+    text-align: center;
+    background-color: #ad545468;
+    text-align: center;
+    box-shadow: 2px 1px #ad5454aa;
+}
+
+#sobre-nos p {
+    width: 80%;
+    text-align: center;
+}
+#logo-footer {
+    padding: 20px;
+}
+
+#nav-header ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-mapa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit; 
+    gap: 6px; 
+    margin-bottom: 12px;
+    transition: color 0.2s ease;
+}
+
+
+.link-mapa:hover {
+    color: #ad5454; 
+}
+
+/* Ajuste específico para o tamanho do ícone */
+.link-mapa .material-symbols-outlined {
+    font-size: 1.4rem;
+    color: #ad5454; 
+}
+.link-mapa h3 {
+    margin: 0;
+    font-size: 1.1rem; 
 }
