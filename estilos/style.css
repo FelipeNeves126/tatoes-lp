@@ -261,19 +261,15 @@ footer img {
 
 #sobre-nos {
     box-sizing: border-box; /* Garante que o padding não aumente o tamanho da div */
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
     padding: 30px 20px; /* Padding menor e mais seguro para o ambiente mobile */
     text-align: center;
     background-color: #ad545468;
-    text-align: center;
+    border-radius: 10px;
     box-shadow: 2px 1px #ad5454aa;
 }
 
-#sobre-nos p {
-    width: 80%;
-    text-align: center;
-}
 #logo-footer {
     padding: 20px;
 }
