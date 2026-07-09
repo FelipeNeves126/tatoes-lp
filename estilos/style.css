@@ -79,7 +79,8 @@ nav ul li {
     align-items: center;
 }
 
-nav ul li:first-child::after {
+/* Alterado para separar todos os itens exceto o último */
+nav ul a:not(:last-child) li::after {
     content: "|";
     margin: 0 15px; 
     font-weight: normal;
@@ -148,7 +149,6 @@ nav ul li:first-child::after {
 #unidades img {
     width: 100%; 
     max-width: 100%; 
-    /* RETIREI O HEIGHT: AUTO DAQUI PARA NÃO QUEBRAR A FACHADA */
 }
 
 .button-cardapio {
