@@ -1,15 +1,21 @@
 @media (min-width: 1024px) {
     
+    /* --- HEADER --- */
     .topo-header {
         margin-top: 20px;
     }
 
-    #logo-header {
-        width: 250px; 
+    #header_card_esquerdo_superior {
+        top: -5px; 
+        left: calc(50% - 280px); 
     }
 
     .icon-solcial-media {
         width: 30px; 
+    }
+
+    #logo-header {
+        width: 250px; 
     }
 
     nav {
@@ -20,11 +26,11 @@
         font-size: 1.5rem; 
     }
 
-    /* Ajustado para aplicar o espaçamento correto no desktop */
     nav ul a:not(:last-child) li::after {
         margin: 0 40px; 
     }
 
+    /* --- UNIDADES --- */
     #unidades {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -67,7 +73,6 @@
         gap: 15px;
     }
 
-    /* --- Ajuste Exato Desktop para Imagens da Fachada --- */
     .fachada-loja {
         width: 100%;
         max-width: 600px; 
@@ -78,7 +83,7 @@
         border-radius: 8px;
     }
 
-    /* Ajustes das caixas diferenciais para Desktop */
+    /* --- SOBRE NÓS --- */
     .diferenciais-container {
         flex-direction: row;
         justify-content: space-between;
@@ -90,13 +95,10 @@
         flex: 1; 
     }
 
+    /* --- FOOTER --- */
     .footer-container {
         flex-direction: row; 
-        justify-content: center; 
-        gap: 10px; 
-    }
-  
-     .footer-container {
         justify-content: space-around; 
+        gap: 10px; 
     }
 }
