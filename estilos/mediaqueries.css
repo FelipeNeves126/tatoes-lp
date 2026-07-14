@@ -96,9 +96,14 @@
     }
 
     /* --- FOOTER --- */
-    .footer-container {
+   .footer-container {
         flex-direction: row; 
-        justify-content: space-around; 
-        gap: 10px; 
+        justify-content: center; /* Mantém a logo perfeitamente no centro */
+        align-items: center;
+    }
+
+    .footer-texto.text-right {
+        position: absolute;
+        right: 10%; /* Empurra o texto para o canto direito */
     }
 }
